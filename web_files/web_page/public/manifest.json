@@ -1,0 +1,25 @@
+{
+  "short_name": "Acumen Academy",
+  "name": "Acumen Acadamy",
+  "icons": [
+    {
+      "src": "icon_Acumen.svg",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo_acumen.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo_acumen.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

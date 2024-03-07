@@ -1,0 +1,24 @@
+<div className="main">
+        <div className="register-form slide-form">
+          <form onSubmit={handleRegistration}>
+            <label htmlFor="chk" aria-hidden="true">Student Registration Form</label>
+            <input type="text" name="name" placeholder="First Name" required="" />
+            <input type="text" name="name" placeholder="Middle Name" required="" />
+            <input type="text" name="name" placeholder="Last Name" required="" />
+            <input type="date" name="birthdate" placeholder="Birthdate" />
+            <input type="email" name="email" placeholder="Email" required="" />
+            <input type="password" id="password" name="password" placeholder="Create Password" required />
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password" required />
+            <select id="grade" name="grade" required>
+              <option value="">Select Grade</option>
+              <option value="1">Grade 1</option>
+              <option value="2">Grade 2</option>
+              <option value="3">Grade 3</option>
+              <option value="4">Grade 4</option>
+              <option value="5">Grade 5</option>
+              <option value="6">Grade 6</option>
+            </select>
+            <button type="submit">REGISTER</button>
+          </form>
+</body>
+</html>
