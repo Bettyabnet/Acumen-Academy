@@ -22,7 +22,6 @@
 	overflow-x: hidden;
 	scroll-padding-top: 144px;
 	scroll-behavior: smooth;
-
   }
 
   html::-webkit-scrollbar{
@@ -37,10 +36,6 @@
 	background: linear-gradient(var(--secondary), var(--white));
 	border-radius: 100px;
   }
-  
-  .section {
-	padding: 40px;
-  }
 
   .heading{
 	position: relative;
@@ -50,19 +45,9 @@
 	text-decoration: underline;
 	background-color: transparent;
 	left: 3rem;
-	margin-bottom: 1.5rem;
+	margin-bottom: 0.5rem;
+	top: -25px;
   }
- 
-  .logo {
-	display: flex;
-	align-items: center;
-	margin-right: 10px;
-  }
-  .logo img {
-	width: 55px;
-	height: 55px;
-  }
- 
   .header {
 	position: fixed;
 	top: 0; left: 0; right: 0;
@@ -132,7 +117,7 @@
 	height: 400px;
 	
   }
-  
+
   .slide-form {
 	display: none;
 	background-color: var(--white);
@@ -191,9 +176,9 @@
 	cursor: pointer;
 	box-shadow: var(--box-shadow);
   }
-.slide-form form button:hover{
+  .slide-form form button:hover{
 	background-color: var(--primary-color)  ;
-}
+  }
   
   .buttons {
 	display: flex;
@@ -217,17 +202,6 @@
   .buttons button:hover{
 	background-color: var(--primary-color);
   }
-
-
-  .home {
-	min-height: 100vh;
-	display: flex;
-	align-items: center;
-	background: url(/src/assets/kid.webp) no-repeat;
-	background-size: cover;
-	background-position: center;
-  }
-
   .home .content {
 	max-width: 45rem;
   }
@@ -245,17 +219,19 @@
 	text-align: center;
 	
   }
+ 
 
-  .abt {
-	flex: 1;
-	text-align: right;
+  .home {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	background: url(/src/assets/kid.webp) no-repeat;
+	background-size: cover;
+	background-position: center;
   }
-
   .moto {
-	position: relative;
-	padding-left: 3rem;
 	color: var(--black);
-	max-width: 70%;
+	max-width: 100%;
 	font-size: 30px;
 
   }
@@ -266,24 +242,283 @@
 	left: 3rem;
 	font-size: 25px;
   }
-  .about-img {
-	position: absolute;
-	background-position: right;
-	background: url(/src/assets/kid3.jpg) no-repeat;
-	background-size: cover;
-	min-height: 100vh;
-	width: 100%;
-	top: 40;
-  }
   .read-more-button {
-	position: relative;
 	display: flex;
 	justify-content: center;
 	cursor: pointer;
-	left: 3rem;
-	width: 10%;
-	margin-top: 50vh;
+	left: 4rem;
+	margin-top: 60vh;
+	bottom: 30px
+  }
 
+  section {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 50px;
+  }
+
+ 
+  .logo {
+	display: flex;
+	align-items: center;
+	margin-right: 10px;
+  }
+  .logo img {
+	width: 55px;
+	height: 55px;
+  }
+
+  .about-img {
+	position: absolute;
+	display: flex;
+	background-position: right;
+	background: url(/src/assets/kbgg.jpg) no-repeat;
+	left: 55rem;
+	width: 100%;
+	height: 100%;
+  }
+  .Courses ul {
+	position: relative;
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	
+  }
+
+  .Courses ul li {
+	position: relative;
+	top: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	padding: 10px;
+	background-color: var(--secondary);
+	border-radius: 20px;
+	width: 400px;
+	height: 250px;
+	box-shadow: var(--black);
+	text-align: center;
+	font-size: 18px;
+	color: var(--black);
+  }
+
+  .Courses ul li:hover {
+	background-color: rgb(217, 192, 255)
+  }
+  .testimonials.blockquote {
+	margin: 20px 0;
+	padding: 10px;
+	background-color: var(--secondary);
+	color: var(--white);
+	border-left: 5px solid var(--primary-color);
+	box-shadow: var(--box-shadow);
+  }
+
+  .videos {
+	background-color: var(--white);
+	min-height: 100vh;
+	display: flex;
+	align-items: left;
+	background: url(/src/assets/Learning-amico.svg) no-repeat;
+	background-position: right;
+  }
+  .video-container ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
   }
   
+  .video-container li {
+	background-color: var(--white);
+	border-radius: 10px;
+	padding: 10px;
+	margin: 10px;
+	width: 200px;
+	height: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  .video-container li:hover{
+	background-color: var(--secondary);
+  }
+
+  
+  .videos li {
+	font-size: 24px;
+	color:var(--black);
+	list-style: none;
+
+  }
+  .videos ul li{
+	padding: 10px;
+	margin: 10px;
+
+  }
+  .videos p{
+	font-size: 20px;
+	max-width: 50%;
+  }
+
+
+  .assignment-container ul {
+	font-size: 25px;
+	list-style: none;
+	justify-content: center ;
+  }
+
+  .assignment-container ul li{
+	padding: 10px;
+	margin: 10px;
+  }
+  
+  /* Testimonials */
+  .testimonials {
+	margin-top: 20px;
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	background: url(assets/Raising\ hand-pana.svg) no-repeat right;
+	background-size: 550px 600px;
+  }
+
+  .testimonials h2 {
+	color: var(--primary-color);
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 25px
+  }
+  
+  blockquote {
+	margin: 30px 0;
+	padding: 20px;
+	background-color: var(--white);
+	border-left: 13px solid rgb(43, 43, 148);
+	box-shadow: var(--box-shadow);
+	width: 130vh;
+	border-radius: 3px;
+  }
+
+  blockquote:hover{
+   background-color: var(--secondary);
+  }
+
+  div.img1{
+	background: url(/src/assets/teacher1.png) no-repeat;
+	width: 275px;
+	height: 275px;
+	border-radius: 50%;
+	margin-left: 80%;
+	margin-top: -250px;
+	margin-bottom: -25px;
+	background-size: cover;
+
+  }
+
+  blockquote .img2{
+	background: url(/src/assets/community.jpg) no-repeat;
+	width: 275px;
+	height: 275px;
+	border-radius: 50%;
+	margin-left: 80%;
+	margin-top: -250px;
+	margin-bottom: -25px;
+	background-size: cover;
+  }
+
+  blockquote .img3{
+	background: url(/src/assets/pare.jpeg) no-repeat;
+	width: 275px;
+	height: 275px;
+	border-radius: 50%;
+	margin-left: 80%;
+	margin-top: -250px;
+	margin-bottom: -25px;
+	background-size: cover;
+  }
+
+  blockquote p {
+	color: var(--black);
+	font-style: italic;
+	font-size: 20px;
+	width: 100vh;
+  }
  
+  
+  blockquote cite {
+	color: var(--black);
+	font-size: 16px;
+  }
+  
+  .assignments {
+	background-color: var(--white);
+	min-height: 100vh;
+	display: flex;
+	align-items: left;
+	background: url(/src/assets/Kids\ Studying\ from\ Home-bro.svg) no-repeat;
+	background-position: right;
+  }
+
+  .assignment-container{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	justify-content: left;
+  }
+  .assignment-container p{
+	font-size: 20px;
+	max-width: 50%;
+  }
+
+  .assignment-container ul {
+	font-size: 25px;
+	list-style: none;
+	justify-content: center ;
+  }
+
+  .assignment-container ul li{
+	padding: 10px;
+	margin: 10px;
+  }
+  .enrollh{
+	text-align: center;
+  }
+  .blogpost p{
+	font-size: 20px;
+	max-width: 50%;
+  }
+  .blog{
+	background-color: var(--white);
+	min-height: 100vh;
+	display: flex;
+	align-items: left;
+	background: url(/src/assets/Webinar-amico.svg) no-repeat;
+	background-position: right;
+  }
+
+  .footer {
+	background-color: var(--black);
+	justify-content: space-evenly;
+	text-align: center;
+	height: 100px;
+	color: var(--white);
+	padding: 20px;
+  }
+  
+  .footer nav {
+	justify-content: center;
+	margin-bottom: 10px;
+  }
+  
+  .footer nav a {
+	color: var(--white);
+	text-decoration: none;
+	margin: 0 10px; /* Add margin to create space between the links */
+  }
+  .footer .navbar a:hover{
+	color: var(--primary-color);
+  }
