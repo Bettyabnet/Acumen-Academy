@@ -37,4 +37,4 @@ If you have any questions or suggestions regarding the project, please feel free
   - Betelhem Assefa (betelhemabnet1@gmail.com), and
   - Daniel Osei (pagesngod@gmail.com)
 - Project Repository: https://github.com/Bettyabnet/Acumen-Academy.git
-  We appreciate your interest and support in this initiative!
+We appreciate your interest and support in this initiative!
