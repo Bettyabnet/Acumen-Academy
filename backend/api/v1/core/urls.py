@@ -27,4 +27,5 @@ urlpatterns = [
    path('redoc/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
    path("api/v1/status/", ApiStatusView.as_view(), name="api-status"),
    path("api/v1/", include("courses.urls")),
+   path("api/v1/auth/", include("accounts.urls")),
 ]
