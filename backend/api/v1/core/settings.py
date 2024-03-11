@@ -40,7 +40,10 @@ INSTALLED_APPS = [
     "rest_framework", # drf
     "drf_yasg",  # documentation
     "courses",
+    "accounts",
 ]
+
+AUTH_USER_MODEL = "accounts.User"
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
