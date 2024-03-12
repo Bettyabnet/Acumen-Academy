@@ -24,6 +24,41 @@ The project utilizes the following technologies:
 - CSS
 - JavaScript
 - React
+- Python
+- Django
+- Django Rest Framework
+
+## How to run the project
+
+- Clone the repository
+  ```sh
+  git clone https://github.com/Bettyabnet/Acumen-Academy.git
+  ```
+
+
+### Frontend - React
+
+- Requirements
+
+  - Node version: 
+
+
+### Backend - Django Rest
+
+- Requirements
+  - Python version: 3.11.5
+
+- Installing dependencies
+  ```sh
+  cd  Acumen-Academy/backend
+
+  pip3 install -r requirements.txt
+  ```
+
+- Running server
+  ```sh
+  python3 api/v1/manage.py runserver
+  ```
 
 ## License
 
