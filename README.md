@@ -40,7 +40,23 @@ The project utilizes the following technologies:
 
 - Requirements
 
-  - Node version: 
+  - Node version: ^v16.20.2
+  - react version: ^18.2.0
+  - npm
+
+  ```sh
+  cd web_files/web_page
+  ```
+
+- Install dependencies
+  ```sh
+  npm install
+  ```
+
+- Start the server
+  ```sh
+  npm start
+  ```
 
 
 ### Backend - Django Rest
