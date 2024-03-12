@@ -5,13 +5,18 @@ from rest_framework import status
 from django.shortcuts import get_object_or_404
 from .serializers import CourseSerializer
 from .models import Course
+from drf_yasg.utils import swagger_auto_schema
 
 
 class CoursesListCreateView(APIView):
     """Class based view for listing and creating Courses
     """
     serializer_class = CourseSerializer
-    
+
+    @swagger_auto_schema(
+        operation_summary="Get all courses available",
+        operation_description="List all courses in db"
+    )    
     def get(self, request:Request, *args, **kwargs):
         """Return a list of all courses"""
         courses = Course.objects.all()
