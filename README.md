@@ -2,11 +2,35 @@
 
 This is a group portfolio project aimed at providing digital education opportunities for underprivileged communities. The project focuses on bridging the educational gap and empowering individuals through online learning.
 
+## Introduction
+
+Welcome to our digital education platform for underprivileged communities! Our platform is designed to provide access to quality educational resources and courses, empowering individuals to unlock a world of possibilities. We believe that education is a fundamental right and should be accessible to everyone, regardless of their background or financial circumstances.
+**Deployed Site:** [Acumen Academy](https://your-deployed-site-url.com)
+
+## Final Project Blog Article: [Read here]
+
+**Authors:**
+
+- [Betelhem Assefa](https://www.linkedin.com/in/betelhem-assefa-632672270)
+- [Daniel Osei](https://www.linkedin.com/in/danielkofiosei/)
+
 ## Project Overview
 
 The goal of this project is to create a digital platform that offers educational resources and courses to underprivileged communities. By leveraging technology, we aim to provide access to quality education and empower individuals to unlock a world of possibilities.
 
-## Key Features
+## Usage
+
+Once you have the project up and running, you can use the digital education platform in the following ways:
+
+Explore the Course Catalog: Browse through our comprehensive course catalog covering various subjects and disciplines. Each course provides structured learning materials, assignments, and assessments.
+
+Access Digital Learning Resources: Take advantage of a wide range of educational resources, including articles, tutorials, videos, and interactive learning materials.
+
+Collaborate and Learn: Engage in collaborative learning experiences through discussion forums, group projects, and mentorship programs. Interact with other learners and make the most out of your educational journey.
+
+Track Your Progress: Keep track of your learning progress, view completed courses, and earn certificates upon successful completion of courses. Measure your achievements and celebrate your milestones.
+
+## Key features
 
 - **Digital Learning Resources:** The platform offers a wide range of educational resources, including articles, tutorials, videos, and interactive learning materials.
 
@@ -28,27 +52,36 @@ The project utilizes the following technologies:
 - Django
 - Django Rest Framework
 
-## How to run the project
+## Contributing
 
-- Clone the repository
-  ```sh
-  git clone https://github.com/Bettyabnet/Acumen-Academy.git
-  ```
+We welcome contributions from the community to enhance the digital education platform. If you would like to contribute, please follow these steps:
 
+Fork the repository on GitHub.
+
+Create a new branch with a descriptive name.
+
+git checkout -b my-contributions
+
+Make your desired changes and improvements.
+
+Commit and push your changes to your forked repository.
+
+Submit a pull request, explaining the changes you have made and their significance.
 
 ### Frontend - React
 
 - Requirements
 
-  - Node version: 
-
+  - Node version:
 
 ### Backend - Django Rest
 
 - Requirements
+
   - Python version: 3.11.5
 
 - Installing dependencies
+
   ```sh
   cd  Acumen-Academy/backend
 
@@ -64,12 +97,12 @@ The project utilizes the following technologies:
 
 This project is licensed under the [MIT License](LICENSE). Feel free to modify and use the code as per the license terms.
 
-## Contact
+## Screenshots
+
+[Home_page](screenshots/home.png)
+[About_page](screenshots/about.png)
+[Videos_page](screenshots/video.png)
 
 If you have any questions or suggestions regarding the project, please feel free to reach out to us:
 
-- Autors
-  - Betelhem Assefa (betelhemabnet1@gmail.com), and
-  - Daniel Osei (pagesngod@gmail.com)
-- Project Repository: https://github.com/Bettyabnet/Acumen-Academy.git
-  We appreciate your interest and support in this initiative!
+We appreciate your interest and support in this initiative!
