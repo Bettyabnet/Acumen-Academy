@@ -2,17 +2,21 @@ import React, { useEffect } from 'react';
 import './style.css';
 
 function App() {
+  // Handles side effects for register and login forms, such as attaching click listeners
   useEffect(() => {
+    // Select DOM elements
     const registerForm = document.querySelector(".register-form");
     const loginForm = document.querySelector(".login-form");
     const registerButton = document.querySelector("#register-button");
     const loginButton = document.querySelector("#login-btn");
-  
+    
+    // Function executed when the register button is clicked
     const handleRegisterButtonClick = () => {
       registerForm.classList.add("active");
       loginForm.classList.remove("active");
     };
-  
+    
+    // Function executed when the login button is clicked
     const handleLoginButtonClick = () => {
       registerForm.classList.remove("active");
       loginForm.classList.add("active");
@@ -20,17 +24,20 @@ function App() {
   
     registerButton.addEventListener("click", handleRegisterButtonClick);
     loginButton.addEventListener("click", handleLoginButtonClick);
-  
+    
+    // Clean up event listeners on unmount
     return () => {
       registerButton.removeEventListener("click", handleRegisterButtonClick);
       loginButton.removeEventListener("click", handleLoginButtonClick);
     };
-  }, []);  
+  }, []); // Empty dependency array means the effect runs once on mount and clean up on unmount 
 
+
+  // Handle submission of the registration form
   const handleLogin = (event) => {
     event.preventDefault();
 
-    // Perform login logic here
+    // Perform login logic 
 
     event.target.email.value = '';
     event.target.password.value = '';
@@ -45,7 +52,7 @@ function App() {
 
     console.log(name, email, password, grade);
     
-    // Perform registration logic here
+    // Perform registration logic 
     event.target.elements.name.value = '';
     event.target.elements.email.value = '';
     event.target.elements.password.value = '';
@@ -54,11 +61,14 @@ function App() {
 
   return (
     <div>
+      {/* Application header */}
       <header className="header">
+        {/* Logo container */}
         <div className="logo">
           <img src="logo_acumen.png" alt="logo" />
           <h1>CUMEN ACADEMY</h1>
         </div>
+         {/* Navigation bar */}
         <nav class ="navbar">
           <a href="#home" class="hover-underline">Home</a>
           <a href="#about" class="hover-underline">About</a>
@@ -68,16 +78,20 @@ function App() {
           <a href="#assignments" class="hover-underline">Assignments</a>
           
         </nav>
-    
+
+        {/* Container holding icons */}
         <div class="icons">
           <div id="login-btn" class="fas fa-user"></div>
           <div id="menu-btn" class="fas fa-bars"></div>
         </div>
         </header>
+         {/* Main content area */}
         <body>
           <div class="main">
+            {/* Register form container */}
             <div class="register-form slide-form">
               <form onSubmit={handleRegistration}>
+                {/* Input fields for the registration form */}
                 <label htmlFor="chk" aria-hidden="true">Student Registration Form</label>
                 <input type="text" name="name" placeholder="First Name" required="" />
                 <input type="text" name="name" placeholder="Middle Name" required="" />
@@ -100,10 +114,12 @@ function App() {
                   <option value="5">Grade 5</option>
                   <option value="6">Grade 6</option>
                 </select>
+                {/* Button submitting the registration form */}
                 <button type="submit">REGISTER</button>
               </form>
             </div>
              
+            {/* Login form container */}
             <div class="login-form slide-form">
               <form onSubmit={handleLogin}>
                 <input type="email" name="email" placeholder="Email" required="" />
@@ -115,13 +131,14 @@ function App() {
                 <button type="submit">LOGIN NOW</button>
               </form>
             </div>
-                
+
+            {/* Container housing buttons */}    
             <div class="buttons">
               <button id="register-button">Join Us</button>
             </div>
           </div>
         
-        
+          {/*Section for homepage */}
           <section class="home" id="home">
             <div class="content">
               <h3> Unlocking Knowledge, Empowering Minds: 
@@ -137,7 +154,7 @@ function App() {
             </div>
           </section>
         
-              
+          {/*Section for About Us page */}
           <section class="about" id="about">
             <div class="container">
               <figure class="about-img">
@@ -155,6 +172,8 @@ function App() {
             </div>
          </section>
     
+         
+         {/*Section listing available courses */}
          <section class="Courses" id="Courses">
             <h1 class="heading">Courses</h1>
               <div>
@@ -190,6 +209,7 @@ function App() {
                 </div>
            </section>
 
+            {/*Section introducing video lessons feature */}
             <section class="videos" id="videos">
             <h3 class="heading">videos</h3>
             <div class="video">
@@ -217,18 +237,19 @@ function App() {
                 </div>
                 </section>
 
-
-                <section class="blog" id="blog">
-           <h1 class="heading">Blog</h1>
-           <div class="blogpost">
-              <h2>Empowering Underprivileged Students Through Digital Education</h2>
-              <p>Introducing Acumen Academy, our digital education platform designed to uplift underprivileged students in grades 1 to 6. With a focus on accessibility and engagement, we provide a range of services to support their educational journey.</p>
-              <p>Through our user-friendly mobile application, students can easily register and access grade-specific video tutorials, assignments, quizzes, and an extensive library of books. With just a few taps, learning becomes interactive and exciting.</p>
-              <p>At Acumen Academy, we believe in equal opportunities for quality education. Join us in our mission to empower underprivileged students and create a brighter future for all.</p>
-              <p class="author">Posted by Acumen Academy</p>
-            </div>
+            {/* Section featuring blog posts */}
+            <section class="blog" id="blog">
+              <h1 class="heading">Blog</h1>
+              <div class="blogpost">
+                  <h2>Empowering Underprivileged Students Through Digital Education</h2>
+                  <p>Introducing Acumen Academy, our digital education platform designed to uplift underprivileged students in grades 1 to 6. With a focus on accessibility and engagement, we provide a range of services to support their educational journey.</p>
+                  <p>Through our user-friendly mobile application, students can easily register and access grade-specific video tutorials, assignments, quizzes, and an extensive library of books. With just a few taps, learning becomes interactive and exciting.</p>
+                  <p>At Acumen Academy, we believe in equal opportunities for quality education. Join us in our mission to empower underprivileged students and create a brighter future for all.</p>
+                  <p class="author">Posted by Acumen Academy</p>
+                </div>
             </section>
 
+            {/*Testimonials section */}
             <section class="testimonials" id="testimonials">
               <h2 class="heading">Testimonials</h2>
               <div class="testimonals">
@@ -254,10 +275,9 @@ function App() {
               </div>
             </section>
 
-
-
+            {/*Assignment section*/}
             <section class="assignments" id="assignments">
-            <div class="assignment-container">
+              <div class="assignment-container">
               <h3 class="heading">Assignments</h3>
                 <h1>Your Gateway to Comprehensive Assignments for Every Course!</h1>
                 <p>📚 English, Maths, Integrated Science, Social Studies, and ICT! 🖥️</p>
@@ -277,6 +297,7 @@ function App() {
           
         </body>
 
+        {/*Application footer*/}
         <footer className="footer">
         <nav class="navbar">
             <a href="about">About Us</a>
