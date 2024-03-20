@@ -5,7 +5,7 @@ This is a group portfolio project aimed at providing digital education opportuni
 ## Introduction
 
 Welcome to our digital education platform for underprivileged communities! Our platform is designed to provide access to quality educational resources and courses, empowering individuals to unlock a world of possibilities. We believe that education is a fundamental right and should be accessible to everyone, regardless of their background or financial circumstances.
-**Deployed Site:** [Acumen Academy](https://your-deployed-site-url.com)
+**Deployed Site:** [Acumen Academy]
 
 ## Final Project Blog Article: [Read here]
 
