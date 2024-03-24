@@ -59,6 +59,8 @@ function App() {
     event.target.elements.grade.value = '';
   };
 
+  const axios = require('axios');
+
   return (
     <div>
       {/* Application header */}
