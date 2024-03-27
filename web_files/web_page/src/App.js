@@ -59,8 +59,6 @@ function App() {
     event.target.elements.grade.value = '';
   };
 
-  const axios = require('axios');
-
   return (
     <div>
       {/* Application header */}
@@ -130,13 +128,14 @@ function App() {
                   <input type="checkbox" name="" id="remember" />
                   <label for="remember-me"> Remember me</label>
                 </div>
+                <div class="buttons"></div>
                 <button type="submit">LOGIN NOW</button>
               </form>
             </div>
 
-            {/* Container housing buttons */}    
+            {/* Container registration buttons */}    
             <div class="buttons">
-              <button id="register-button">Join Us</button>
+              <button id="register-button">REGISTER NOW</button>
             </div>
           </div>
         
