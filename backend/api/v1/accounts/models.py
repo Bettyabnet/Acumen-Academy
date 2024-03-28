@@ -35,15 +35,24 @@ class CustomUserManager(BaseUserManager):
 
 class User(AbstractUser):
     email = models.CharField(max_length=80, unique=True)
-    username = models.CharField(max_length=45)
+    first_name = models.CharField(max_length=30)
+    middle_name = models.CharField(max_length=30, blank=True, null=True)
+    last_name = models.CharField(max_length=30)
     date_of_birth = models.DateField(null=True)
+    GENDER_CHOICES = (
+        ('M', 'Male'),
+        ('F', 'Female'),
+        ('O', 'Other'),
+    )
+    gender = models.CharField(max_length=1, choices=GENDER_CHOICES, null=True)
+    grade = models.CharField(max_length=10, null=True)
 
     objects = CustomUserManager()
 
     USERNAME_FIELD = "email"
     REQUIRED_FIELDS = [
-        "username"
+        'first_name', 'last_name', 'date_of_birth', 'gender', 'grade'
     ]
 
     def __str__(self):
-        return self.username
+        return self.email
